@@ -1,0 +1,23 @@
+# Environment & secrets
+.env
+/secrets/
+/runtime/
+
+# Logs & databases
+*.log
+*.db
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Node / Python / build artifacts
+node_modules/
+dist/
+__pycache__/
+*.pyc
+
+# Internal docs
+assets/docs/
