@@ -1,0 +1,5 @@
+{
+  "model": "qwen3-v1-4b",
+  "endpoint": "http://192.168.0.10:1234/v1/chat/completions",
+  "max_tokens": 100
+}
