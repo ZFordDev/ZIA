@@ -1,0 +1,7 @@
+{
+  "template": "web_02",
+  "ui_options": {
+    "dark_mode": true,
+    "show_title": true
+  }
+}

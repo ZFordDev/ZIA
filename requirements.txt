@@ -1,9 +1,21 @@
 # Core dependencies
-discord.py==2.3.2
-Flask==3.0.3
-python-dotenv==1.0.1
-requests==2.32.3
+requests
 
-# Optional
-# faiss-cpu==1.8.0
-# PyPDF2==3.0.1
+# Discord bot
+discord.py
+
+# Slack bot
+slack-bolt
+slack-sdk
+
+# Web chat (FastAPI + auth + templates)
+fastapi
+uvicorn
+python-jose[cryptography]  
+jinja2                      
+python-multipart 
+
+# Dev extras
+black
+flake8
+pytest

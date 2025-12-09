@@ -1,0 +1,9 @@
+{
+  "SLACK_BOT_TOKEN": "your_slack_bot_token_here",
+  "SLACK_SIGNING_SECRET": "your_slack_signing_secret_here",
+  "SLACK_APP_TOKEN": "your_slack_app_token_here",
+
+  // Persona mappings per chain_id
+  "SLACK_PERSONA_chain123": "playful",
+  "SLACK_PERSONA_chain456": "strict"
+}

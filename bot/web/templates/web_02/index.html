@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ZIA TERMINAL V.2.0</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <!-- CRT Scanline Overlay -->
+  <div class="scanlines"></div>
+  <div class="noise"></div>
+
+  <div id="terminal-container">
+    <header>
+      <pre>
+███████╗██╗ █████╗ 
+╚══███╔╝██║██╔══██╗
+  ███╔╝ ██║███████║
+ ███╔╝  ██║██╔══██║
+███████╗██║██║  ██║
+╚══════╝╚═╝╚═╝  ╚═╝
+:: SYSTEM ONLINE ::
+      </pre>
+    </header>
+
+    <!-- Login/Register -->
+    <div id="auth">
+      <div class="terminal-prompt">AUTHENTICATION REQUIRED</div>
+      <div class="input-group">
+        <label>> USR:</label>
+        <input type="text" id="username" autocomplete="off">
+      </div>
+      <div class="input-group">
+        <label>> PWD:</label>
+        <input type="password" id="password">
+      </div>
+      
+      <div id="auth-buttons">
+        <button onclick="register()">[ REGISTER ]</button>
+        <button onclick="login()">[ LOGIN ]</button>
+      </div>
+    </div>
+
+    <!-- Chat Interface -->
+    <div id="chat" style="display:none;">
+      <div id="history">
+        <div class="sys-msg">CONNECTION ESTABLISHED...</div>
+        <div class="sys-msg">LOADING MEMORY BANKS...</div>
+      </div>
+      
+      <div class="input-line">
+        <span class="prompt">USER@ZIA:~$</span>
+        <input type="text" id="message" autocomplete="off" autofocus>
+        <button id="send-btn" onclick="sendMessage()">ENTER</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
